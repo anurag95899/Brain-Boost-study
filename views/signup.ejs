@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shery | SignIn</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="../stylesheets/signup.css">
+</head>
+<body>
+    <div id="main">
+        <div id="left">
+            <div id="nav">
+                <img src="../images/attachment_58846331.png" alt="">
+            </div>
+            <div id="sign-in-page">
+                <p>welcome champ!</p>
+                <h1>Register your account</h1>
+                <form id="land-form" action="/register" method="post">
+                    <h5>Name</h5>
+                    <input type="text" required name="name">
+                    <br>
+
+                    <h5>Email</h5>
+                    <input type="email" required name="email">
+                    <br>
+
+                    <h5>Contact No. (WhatsApp)</h5>
+                    <input type="number" required name="whatsappnumber">
+                    <br>
+
+                    <h5>Password</h5>
+                    <input type="password" required name="password">
+                    <button type="submit">Sign Up</button>
+                </form>
+                  <a style="margin-top: 2vh;" href="/signIn">Account Already Exist?</a>
+                <div id="gitgoog">
+                    <a id="google_link" href="/login/federated/google"><i class="ri-google-fill"></i>Continue With Google</a>
+                </div>
+            </div>
+        </div>
+        <div id="right">
+               <div id="pic">
+                <img src="../images/19362653.jpg" alt="">
+               </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+</body>
+</html>

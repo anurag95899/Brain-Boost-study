@@ -1,0 +1,32 @@
+<div id="nav">
+    <div id="logo">
+        <img src="../images/attachment_58846331.png" alt="">
+        <h4>BrainBoost</h4>
+    </div>
+    <div id="navigation">
+        <a href="/">Home</a>
+        <a href="/courses">Courses</a>
+        <a href="/classroom">Classroom</a>
+        <div id="touch">
+            <a id="tch" href="/profile">
+                    <%=loginuser.name%>
+                
+            </a>
+            <div id="logoutbtn">
+                <h4 style="font-weight:600;font-family:gilroy ; text-transform: capitalize; font-size: 1.2vw;">
+                    <%=loginuser.name%>
+                </h4>
+                <a href="/profile">My account</a>
+                <a href="/logout">Logout</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<style>
+    #touch:hover #logoutbtn {
+        display: flex;
+        /* opacity: 1; */
+    }
+</style>

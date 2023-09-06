@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-left: 5VH;
+    /* justify-content: center; */
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://img.freepik.com/free-photo/psychedelic-paper-shapes-with-copy-space_23-2149378246.jpg?w=1060&t=st=1687117979~exp=1687118579~hmac=fc8a331b9b41021b9fe645d4d9be0e59f53bc295081fe2e950d6c9cbfad1038a);
+    
+}
+#login{
+    /* opacity: 0; */
+    height: 55vh;
+    /* background-color: #FFFFFF; */
+    width: 50%;
+    border-radius: 30px;
+    /* box-shadow: 0 0 5px #acacac; */
+  }
+  
+  .login{
+    padding: 1vh 0;
+    width: 100%;
+    /* height: 100%; */
+    border-radius: 20px;
+    /* background-color: #ffffff7e; */
+    position: relative;
+    z-index: 999;
+    /* background-color: red; */
+    display:flex ;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    /* border-right: 1px solid #787878a4; */
+  
+  }
+  #logo img{
+    position: relative;
+    width: 120px;
+  }
+  .login>#logo{
+    margin-bottom: 3vh;
+  }
+  
+  .login h1{
+    font-size: 3.8vh;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-bottom: 2vh;
+    font-family: gilroy;
+  }
+  .login p{
+    margin-bottom: 5vh;
+    font-size: 2vh;
+    color: #454545;
+  }
+  .login input{
+    width: 100%;
+    height: 6.5vh;
+    border: 2px solid #959595;
+    border-radius: 10px;
+    padding: 0 2vh;
+    margin-bottom: 2vh;
+    background-color: #ffffffc7;
+    outline-color: rgb(22, 135, 255);
+  }
+  .username{
+    margin-bottom: 4vh;
+  }
+  .signup{
+    width: 50%;
+    height: 100%;
+    /* background-color: rgb(102, 255, 0); */
+  }
+  .login button{
+    margin-top: 4vh;
+    width: 60%;
+    padding: 1.7vh 0vh;
+    border: none;
+    border-radius: 30px;
+    font-size: 2.5vh;
+    background-color: #111111;
+    color: #ffff;
+  }
+  .login a{
+    margin-top: 2vh;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 2.5vh;
+  }
+  #google{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 4vh;
+    width: 50%;
+    padding: 1vh 1vh;
+    border: none;
+    border-radius: 30px;
+    font-size: 2.5vh;
+    background-color: #FA4C3D;
+    color: #ffff;
+  }
+  .close{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 4vh;
+    
+  }
+  .close a{
+    border-radius: 50%;
+    padding: 3px;
+    text-decoration: none;
+    font-size: 4vh;
+    color: #000;
+    
+  }
+  .close a i{
+    border-radius: 50%;
+    padding: 3px;
+  }
+  .close>a>i:hover{
+    background-color: #dadada;
+    cursor: pointer;
+      
+  }

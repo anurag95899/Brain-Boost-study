@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="../stylesheets/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <style>
+        #editpage h1 {
+            text-transform: capitalize;
+            font-family: gilroy;
+            font-weight: 400;
+            text-decoration: underline;
+            text-decoration-line: underline;
+            text-decoration-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <% include ../partials/nav.ejs %>
+            <div style="margin-top: 10vh; padding: 10vh;" id="editpage">
+                <h1>Edit module</h1>
+                <form action="/updatemodule/<%=editModule._id %>" method="post">
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Module name</label>
+                      <input type="text" class="form-control" name="module" id="exampleInputPassword1" value="<%=editModule.module%>">
+                    </div>
+                    <button type="submit" class="btn btn-success">Update</button>
+                  </form>
+            </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+</html>

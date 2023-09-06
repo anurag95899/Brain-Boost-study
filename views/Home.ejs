@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../stylesheets/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="../stylesheets/new.css">
+</head>
+<body>
+  <div id="main">
+    <% include ../partials/nav.ejs %>
+      <div id="page1">
+        <div id="page1left">
+          <h1>Learn from the <span>coolest <br> coding plateform</span> in <br> India.</h1>
+          <h6 style="margin-top: 0vh;">
+            <i class="ri-check-line"></i>
+            Top notch projects
+          </h6>
+          <h6>
+            <i class="ri-check-line"></i>
+            Support via mentors
+          </h6>
+          <a href="/courses">
+            <div id="explore">
+              <button>Explore Courses</button>
+            </div>
+          </a>
+          <div id="somedetials">
+            <div class="detials">
+              <div class="cardimg">
+                <i class="ri-school-line"></i>
+              </div>
+              <h5 class="count">16,032</h5>
+              <h6 class="countname">School</h6>
+            </div>
+            <div class="detials">
+              <div style="background-color: #f8728b52;" class="cardimg">
+                <i style="color: #F8728B;" class="ri-group-line"></i>
+              </div>
+              <h5 style="color: #F8728B;" class="count">10M</h5>
+              <h6 class="countname">Users</h6>
+            </div>
+            <div class="detials">
+              <div style="background-color: #6574fe4b;" class="cardimg">
+                <i style="color: #6575FE;" class="ri-earth-fill"></i>
+              </div>
+              <h5 style="color: #6575FE;" class="count">119</h5>
+              <h6 class="countname">Countries</h6>
+            </div>
+          </div>
+        </div>
+        <div id="page1right">
+
+
+        </div>
+      </div>
+      <div id="page2">
+        <div id="page2left">
+          <img src="../images/second img.png" alt="">
+        </div>
+        <div id="page2right">
+          <h2>Benefit from our online Learning</h2>
+          <div id="coursesdets">
+            <div class="coursesdets">
+              <div class="detsphoto">
+                <img src="../images/Icons/certificate_2490354.png" alt="">
+              </div>
+              <div class="detstext">
+                <h3>Online Degree</h3>
+                <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Corporis pariatur eveniet
+                  maiores nemo?</h6>
+              </div>
+            </div>
+            <div class="coursesdets">
+              <div class="detsphoto">
+                <img src="../images/Icons/movie_4867142.png" alt="">
+              </div>
+              <div class="detstext">
+                <h3>Short Courses</h3>
+                <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Corporis pariatur eveniet
+                  maiores nemo?</h6>
+              </div>
+            </div>
+            <div class="coursesdets">
+              <div class="detsphoto">
+                <img src="../images/Icons/balance_7457783.png" alt="">
+              </div>
+              <div class="detstext">
+                <h3>Learn With Experts</h3>
+                <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Corporis pariatur eveniet
+                  maiores nemo?</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="page3">
+        <div class="slider-container">
+          <button class="slider-button left-button"><i class="ri-arrow-left-s-line"></i></button>
+          <div class="slider">
+            <% cources.forEach(function(cour){ %>
+              <div class="course">
+                <a href="/coursesDetailes/<%=cour.coursestittle%>">
+                  <div class="coursesimg">
+                    <img src="/getCourses/<%=cour.thumnail%>" alt="">
+                  </div>
+                </a>
+                <a href="/coursesDetailes/<%=cour.coursestittle%>">
+                  <div class="coursesname">
+                    <h3>
+                      <%=cour.coursestittle %>
+                    </h3>
+                  </div>
+                </a>
+                <div class="courseslittledets">
+                  <p>
+                    <%=cour. coursesdes %>
+                  </p>
+                </div>
+                <div class="coursestime">
+                  <div class="logo"></div>
+                  <div>
+                    <h5>Edut</h5>
+                    <small>21 Live classes</small>
+                  </div>
+                </div>
+
+              </div>
+              <% }) %>
+          </div>
+          <button class="slider-button right-button"><i class="ri-arrow-right-s-line"></i></button>
+        </div>
+      </div>
+      <div id="page4">
+        <div id="page4text">
+          <h1>Student Testiomonial</h1>
+          <h6>Discover some of the many benefit you will enjoy when you <br> add us to your online learning
+            platform.</h6>
+        </div>
+        <div id="review">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="swipertext">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus at corrupti maiores
+                    assumenda, iste ab doloremque tempora iure ad doloribus laudantium non recusandae
+                    qui et.</p>
+                  <div class="reviewpics">
+                    <div class="reviewpic">
+                      <img
+                        src="https://images.unsplash.com/photo-1583864697784-a0efc8379f70?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1888&q=80"
+                        alt="">
+                    </div>
+                  </div>
+                  <div class="reviewername">
+                    <h3>Nitish Kumar</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swipertext">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus at corrupti maiores
+                    assumenda, iste ab doloremque tempora iure ad doloribus laudantium non recusandae
+                    qui et.</p>
+                  <div class="reviewpics">
+                    <div class="reviewpic">
+                      <img
+                        src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
+                        alt="">
+                    </div>
+                  </div>
+                  <div class="reviewername">
+                    <h3>Gulshan kumar</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swipertext">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus at corrupti maiores
+                    assumenda, iste ab doloremque tempora iure ad doloribus laudantium non recusandae
+                    qui et.</p>
+                  <div class="reviewpics">
+                    <div class="reviewpic">
+                      <img
+                        src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1780&q=80"
+                        alt="">
+                    </div>
+                  </div>
+                  <div class="reviewername">
+                    <h3>Sankalp Jhoson</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swipertext">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus at corrupti maiores
+                    assumenda, iste ab doloremque tempora iure ad doloribus laudantium non recusandae
+                    qui et.</p>
+                  <div class="reviewpics">
+                    <div class="reviewpic">
+                      <img
+                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                        alt="">
+                    </div>
+                  </div>
+                  <div class="reviewername">
+                    <h3>Anurag Yadav</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+      <div id="footer">
+        <div id="footertop">
+          <div id="footertopleft">
+            <div class="brandname">
+              <div class="logo"></div>
+              <h4>BrainBoost</h4>
+            </div>
+            <div id="email">
+              <input type="text" placeholder=" Your Email">
+              <h3>Start Your Learning Journey</h3>
+            </div>
+          </div>
+        </div>
+        <div id="footerbottom">
+          <div class="footerb1">
+            <h2>BrainBoost</h2>
+            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, odit?</h5>
+          </div>
+          <div class="footerb2">
+            <a href="">About</a>
+            <a href="">Job</a>
+            <a href="">Docs</a>
+          </div>
+          <div class="footerb3">
+            <a href="">Term and Conditions</a>
+            <a href="">Privacy Policy</a>
+            <a href="">Cookie Policy</a>
+          </div>
+          <div class="footerb4">
+            <h5>Let's Chat!</h5>
+            <small>nitishjsr7209@gmail.com</small>
+          </div>
+        </div>
+      </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const slider = document.querySelector(".slider");
+      const leftButton = document.querySelector(".left-button");
+      const rightButton = document.querySelector(".right-button");
+
+      let scrollPosition = 0;
+
+      leftButton.addEventListener("click", function () {
+        scrollPosition -= 100;
+        if (scrollPosition < 0) {
+          scrollPosition = 0;
+        }
+        slider.scroll({ left: scrollPosition, behavior: "smooth" });
+      });
+
+      rightButton.addEventListener("click", function () {
+        scrollPosition += 100;
+        if (scrollPosition > slider.scrollWidth - slider.clientWidth) {
+          scrollPosition = slider.scrollWidth - slider.clientWidth;
+        }
+        slider.scroll({ left: scrollPosition, behavior: "smooth" });
+      });
+    });
+
+  </script>
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+</body>
+</html>

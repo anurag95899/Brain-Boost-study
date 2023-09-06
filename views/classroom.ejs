@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../stylesheets/style.css">
+    <link rel="stylesheet" href="../stylesheets/classroom.css">
+</head>
+<body>
+    <div id="main">
+        <% include ../partials/nav.ejs %>
+            <div id="page1">
+
+                <div class="slider-container">
+                    <div class="slider">
+                        <% loginuser.buycources.forEach(function(buycourses){ %>
+                            <div class="course">
+                                <a href="/coursesDetailes/<%=buycourses.coursestittle %>">
+                                    <div class="coursesimg">
+                                        <img src="/getCourses/<%=buycourses.thumnail %>" alt="">
+                                    </div>
+                                </a>
+                                <a href="/coursesDetailes/<%=buycourses.coursestittle %>">
+                                    <div class="coursesname">
+                                        <h3>
+                                            <%= buycourses.coursestittle %>
+                                        </h3>
+                                    </div>
+                                </a>
+                                <div>
+                                    <h4 style="font-size: 2.5vh; font-weight: 500;"> Started on <span style="font-size: 2vh; font-weight: 400;" id="date"><%=buycourses.date %></h4></span>
+                                </div>
+                                <div id="btn">
+                                    <button id="alreadybuy" style="background-color: #14BB7F;">Paid</button>
+                                    <button id="alert" style="background-color: #0085FF;">Watch Recoded</button>
+                                </div>
+                            </div>
+                            <% }) %>
+                    </div>
+                </div>
+            </div>
+            <div id="footer">
+                <div id="footertop">
+                    <div id="footertopleft">
+                        <div class="brandname">
+                           <div class="logo"></div>
+                           <h4>BrainBoost</h4>
+                        </div>
+                        <div id="email">
+                            <input type="text" placeholder=" Your Email">
+                            <h3>Start Your Learning Journey</h3>
+                        </div>
+                    </div>
+                </div> 
+                <div id="footerbottom">
+                    <div class="footerb1">
+                        <h2>BrainBoost</h2>
+                        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, odit?</h5>
+                    </div>
+                    <div class="footerb2">
+                        <a href="">About</a>
+                        <a href="">Job</a>
+                        <a href="">Docs</a>
+                    </div>
+                    <div class="footerb3">
+                        <a href="">Term and Conditions</a>
+                        <a href="">Privacy Policy</a>
+                        <a href="">Cookie Policy</a>
+                    </div>
+                    <div class="footerb4">
+                        <h5>Let's Chat!</h5>
+                        <small>nitishjsr7209@gmail.com</small>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <script>
+        function date() {
+            var element = document.querySelectorAll("#date");
+            element.forEach(function (date) {
+                let originalDate = date.innerText;
+                let parts = originalDate.split("-");
+                let modifiedDate = parts.reverse().join("-");
+                date.innerText = modifiedDate;
+            })
+        }
+        date()
+
+        function alerts(){
+           var alertcmt =  document.querySelectorAll("#alert")
+            alertcmt.forEach(function(ale){
+                ale.addEventListener("click", function(){
+                    alert("working on it...")
+                })
+            })
+        }
+        alerts()
+
+        function alreadybuy(){
+           var buyalert =  document.querySelectorAll("#alreadybuy")
+            buyalert.forEach(function(msg){
+                msg.addEventListener("click", function(){
+                    alert("You have already purchase this courses!")
+                })
+            })
+        }
+        alreadybuy()
+    </script>
+</body>
+</html>

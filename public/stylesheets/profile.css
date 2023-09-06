@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "gilroy";
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+#mainprofile {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#profile {
+    /* width: 85vw; */
+    height: 85vh;
+    margin-top: 5vh;
+    /* background-color: red; */
+    overflow: hidden;
+    border-radius: 20px;
+    display: flex;
+    box-shadow: 0 0 10px #a2a2a2;
+}
+
+#leftprofile {
+    width: 20vw;
+    border-radius: 8px 0 0 8px;
+    height: 100%;
+    display: flex;
+    box-shadow: -3px 1px 10px rgba(0, 0, 0, 0.15);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 9;
+}
+
+#user {
+    position: relative;
+    width: 100%;
+    height: 40%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#userimg {
+    width: 10vw;
+    height: 10vw;
+    /* background-color: red; */
+    overflow: hidden;
+    border-radius: 50%;
+    overflow: hidden;
+}
+#userimg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#usereditbtn {
+    /* background-color: pink; */
+    position: absolute;
+    top: 62%;
+    left: 67%;
+}
+
+#usereditbtn button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1vw;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    left: -1vw;
+    top: -1vh;
+    border-radius: 50%;
+    background: linear-gradient(to right bottom, #45a2ff, #64cbff);
+    border: none;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+#userimg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+#leftprofile #userDets {
+    width: 100%;
+    height: 67%;
+    display: flex;
+    border-radius: 0 0 0 8px;
+    padding-top: 3vh;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    background: linear-gradient(to right bottom, rgb(238, 247, 255), rgb(225, 240, 255));
+}
+
+#leftprofile #userDets h3 {
+    position: relative;
+    width: 100%;
+    color: #444;
+    padding: 2.3vh 1.6vw;
+    cursor: pointer;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    font-weight: 500;
+    background: linear-gradient(to right, rgb(243, 246, 255), rgb(213, 236, 255));
+    margin: 5px 0;
+    font-size: 1.5vw;
+    align-items: center;
+}
+#leftprofile #userDets a {
+    position: relative;
+    width: 100%;
+    color: #444;
+    padding: 2.3vh 1.6vw;
+    cursor: pointer;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    font-weight: 500;
+    background: linear-gradient(to right, rgb(243, 246, 255), rgb(213, 236, 255));
+    margin: 5px 0;
+    font-size: 1.5vw;
+    align-items: center;
+}
+
+#leftprofile #userDets #op1 #before1 {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 8px;
+    height: 60px;
+    background-color: #3DB5FF;
+    opacity: 0;
+}
+
+#leftprofile #userDets #op2 #before2 {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 8px;
+    height: 60px;
+    background-color: #3DB5FF;
+}
+
+#leftprofile #userDets h3:hover {
+    /* color: red; */
+    background: linear-gradient(to right, rgb(157, 205, 245), rgb(243, 246, 255));
+}
+#leftprofile #userDets a:hover {
+    /* color: red; */
+    background: linear-gradient(to right, rgb(157, 205, 245), rgb(243, 246, 255));
+}
+
+#rightpage {
+    position: relative;
+    z-index: 9;
+    width: 65vw;
+    height: 100%;
+    overflow-y: auto;
+    /* background-color: red; */
+}
+
+#rightpage::-webkit-scrollbar {
+    display: none;
+}
+
+#rightpage1 {
+    width: 100%;
+    height: 100%;
+    padding: 10vh;
+    /* background-color: red; */
+}
+
+#rightpage1 input {
+    border: none;
+    border: 2px solid #000;
+    height: 6vh;
+    padding: 1vh;
+    outline: none;
+}
+
+
+
+#frame1 {
+    padding: 10vh;
+
+}
+
+#frame2 {
+    padding: 3vh;
+    flex-wrap: wrap;
+
+
+}
+
+#rightpage2 {
+    position: relative;
+    z-index: 99;
+    padding: 10vh;
+    display: flex;
+    gap: 30px;
+    /* background-color: red; */
+}
+
+#rightpage2 #frame2 .card {
+    /* border: none; */
+    /* border: 10px solid #ff0000; */
+    border: 20px;
+    overflow: hidden;
+    padding: 10px;
+    box-shadow: 10px 10px 10px #cdcdcd;
+}
+
+#courseimg {
+    width: 24rem;
+    height: 30vh;
+    /* background-color: red; */
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    /* padding: 1vh; */
+}
+
+#courseimg img {
+    border-radius: 10px;
+    width: 97%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
